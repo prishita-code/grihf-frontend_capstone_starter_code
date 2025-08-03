@@ -1,9 +1,9 @@
 /* Styles for the container element */
 .container {
-    max-width: 100%; /* Set maximum width for the container */
+    max-width: 700px; /* Set maximum width for the container */
     margin: 0 auto; /* Center the container horizontally */
     padding: 40px; /* Add padding inside the container */
-    margin-top: 10%; /* Set top margin as a percentage of the viewport height */
+    margin-top: 5%; /* Set top margin as a percentage of the viewport height */
     overflow: hidden; /* Hide any overflowing content */
 }
 
@@ -49,6 +49,9 @@
 
 /* Styles for the overall signup container */
 .signup {
+    width: 100%; /* Make sure it fills the container */
+    max-width: 1200px; /* Set a maximum width for the signup section */
+    margin: 0 auto;   /* Center it */
     flex: 1; /* Use flexible layout to fill available space */
     background-color: #fff; /* Set background color to white */
     padding: 40px; /* Add padding inside the element */
