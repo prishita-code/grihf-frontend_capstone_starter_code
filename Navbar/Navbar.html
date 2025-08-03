@@ -17,11 +17,20 @@
     <nav class="navbar">
         <div class="navbar-container">
             <a href="#" class="navbar-logo">MyWebsite</a>
+
+            <button>Home</button>
+            <button>Appointments</button>
+            <button>Reviews</button>
+            <button>Health Blog</button>
+            <button>Sign Up</button>
+            <button>Login</button>
             <ul class="navbar-menu">
                 <li><a href="#home" class="navbar-link">Home</a></li>
-                <li><a href="#about" class="navbar-link">About</a></li>
-                <li><a href="#services" class="navbar-link">Services</a></li>
-                <li><a href="#contact" class="navbar-link">Contact</a></li>
+                <li><a href="#appointments" class="navbar-link">Appointments</a></li>
+                <li><a href="#reviews" class="navbar-link">Reviews</a></li>
+                <li><a href="#health-blog" class="navbar-link">Health Blog</a></li>
+                <li><a href="#signup" class="navbar-link">Sign Up</a></li>
+                <li><a href="#login" class="navbar-link">Login</a></li>
             </ul>
             <div class="navbar-icons">
                 <i class="fas fa-search"></i>
@@ -35,25 +44,36 @@
             <h1>Welcome to MyWebsite</h1>
             <p>This is the home section of the website.</p>
         </section>
-        <section id="about" class="section">
-            <h1>About Us</h1>
-            <p>This is the about section of the website.</p>
+        <section id="appointments" class="section">
+            <h1>Appointments</h1>
+            <p>This is the appointments section of the website.</p>
         </section>
-        <section id="services" class="section">
-            <h1>Our Services</h1>
-            <p>This is the services section of the website.</p>
+        <section id="reviews" class="section">
+            <h1>Reviews</h1>
+            <p>This is the reviews section of the website.</p>
         </section>
-        <section id="contact" class="section">
-            <h1>Contact Us</h1>
-            <p>This is the contact section of the website.</p>
+        <section id="health-blog" class="section">
+            <h1>Health Blog</h1>
+            <p>This is the health blog section of the website.</p>
+        </section>
+        <section id="signup" class="section">
+            <h1>Sign Up</h1>
+            <p>This is the sign-up section of the website.</p>
+        </section>
+        <section id="login" class="section">
+            <h1>Login</h1>
+            <p>This is the login section of the website.</p>
         </section>
     </main>                 
     <!-- Footer Section -->
     <footer class="footer">
-        <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year"></span> MyWebsite. All rights reserved.</p>
     </footer>
 
 
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
@@ -107,4 +127,4 @@ The overall design is modern and clean, suitable for a variety of website types.
 The HTML file is well-commented, making it easy to understand and modify for future use.
 The use of semantic HTML elements improves accessibility and SEO, ensuring a better user experience.
 The navbar is a key component of the website, providing easy access to different sections and enhancing usability
-    
+
